@@ -1,4 +1,4 @@
-/* Create collection of books */
+/* Create a collection of books */
 const books = [
     {
         tittle: 'Book 1',
@@ -11,21 +11,28 @@ const books = [
     {
         tittle: 'Book 3',
         author: 'Author 3',
+    },
+    {
+        tittle: 'Book 4',
+        author: 'Author 4',
+    },
+    {
+        tittle: 'Book 5',
+        author: 'Author 5',
     }
 ];
 
-/* Display the collection of books on the top of the page*/
-const listbooks= document.querySelector('#list-book');
-const tableContainer= document.createElement('table');
-tableContainer.classList.add('list-book-container');
+/* Display all books save in the collection */
+const listbooks = document.querySelector('#list-books');
+const container = document.createElement('table');
+container.classList.add('table-item');
 books.forEach((book) => {
-const trContainer= document.createElement('tr');
-trContainer.innerHTML = `
-<td>${book.tittle}</td>
-<td>${book.author}</td>
-<td><button class="btn-remove" type="button">Remove</button></td>
-`;
-tableContainer.appendChild(trContainer);
-listbooks.appendChild(tableContainer);
+    const container2 = document.createElement('tr');
+    container2.innerHTML= `
+        <td>"${book.tittle}"</td>
+        <td> by ${book.author}</td>
+        <td><button type="button" class="btn-remove">Remove</button></td>  
+    `;
+    container.appendChild(container2);
+    listbooks.appendChild(container);
 });
-
