@@ -28,7 +28,7 @@ To get a local copy up and running follow these simple example steps:
 
 - GitHub: [@craigs40](https://github.com/craigs40)
 
-👤 **Sergio Valadez**
+👤 **Hemerson Foreste**
 
 - GitHub: [@ForHemer](https://github.com/ForHemer)
 - Twitter: [@HemersonForeste](https://twitter.com/HemersonForeste)
