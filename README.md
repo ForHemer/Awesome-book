@@ -12,6 +12,10 @@ In this project, we will build a basic website that allows users to add/remove b
   - CSS
   - JavaScript
 
+## Live Demo
+
+[Live Demo Link](https://forhemer.github.io/Awesome-book/)
+
 ### Setup
 
 To get a local copy up and running follow these simple example steps:
@@ -38,7 +42,7 @@ To get a local copy up and running follow these simple example steps:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/sergiogval/awesome-books/issues).
+Feel free to check the [issues page](https://github.com/ForHemer/Awesome-book/issues).
 
 ## Show your support
 
