@@ -2,7 +2,7 @@ class Book {
   constructor(title, author) {
     this.title = title;
     this.author = author;
-  }  // eslint-disable-next-line no-unused-vars
+  }
 }
 
 /* Add Book */
@@ -23,15 +23,6 @@ const addBook = () => {
 
   localStorage.setItem('books', JSON.stringify(books));
 };
-
-/* Submit */
-document.querySelector('.btn-submit').addEventListener('click', (e) => {
-  e.preventDefault();
-  addBook();
-  displayBook();
-  document.querySelector('#title').value = '';
-  document.querySelector('#author').value = '';
-});
 
 /* Display Book */
 const displayBook = () => {
@@ -74,4 +65,13 @@ document.querySelector('.table-item').addEventListener('click', (e) => {
   e.preventDefault();
   removeBook(e.target);
   deleteBook(e.target);
+});
+
+/* Submit */
+document.querySelector('.btn-submit').addEventListener('click', (e) => {
+  e.preventDefault();
+  addBook();
+  displayBook();
+  document.querySelector('#title').value = '';
+  document.querySelector('#author').value = '';
 });
