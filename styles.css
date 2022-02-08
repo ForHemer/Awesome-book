@@ -13,8 +13,14 @@ h2 {
 #list-books {
   margin: 0 auto;
   width: 50%;
-  display: flex;
   justify-content: center;
+}
+
+#add-book,
+#list-books,
+button,
+.btn-submit {
+  display: flex;
 }
 
 #list-books {
@@ -23,7 +29,6 @@ h2 {
 
 table {
   border: solid 2px black;
-  padding: 10px;
   border-spacing: 0;
 }
 
@@ -31,8 +36,9 @@ tr:nth-child(even) {
   background-color: #f2f2f2;
 }
 
-td {
-  padding: 0;
+td,
+table {
+  padding: 10px;
 }
 
 input {
@@ -41,7 +47,6 @@ input {
 
 button,
 .btn-submit {
-  display: flex;
   font-weight: bold;
   letter-spacing: 1px;
   padding: 0.4rem;
