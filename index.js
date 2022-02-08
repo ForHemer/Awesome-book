@@ -1,3 +1,10 @@
+class Book {
+  constructor(title, author) {
+    this.title = title;
+    this.author = author;
+  }
+}
+
 /* Add Book */
 const addBook = () => {
   let books;
