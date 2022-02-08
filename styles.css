@@ -1,0 +1,19 @@
+h1 {
+  text-align: center;
+}
+
+#add-book,
+#list-books {
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+#list-books {
+  padding-bottom: 20px;
+}
+
+input {
+  margin: 5px;
+}
