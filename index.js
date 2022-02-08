@@ -1,3 +1,4 @@
+/* Add Book */
 const addBook = () => {
   let books;
   const bookTitle = document.querySelector('#title').value;
@@ -16,6 +17,7 @@ const addBook = () => {
   localStorage.setItem('books', JSON.stringify(books));
 };
 
+/* Display Book */
 const displayBook = () => {
   const newBook = document.querySelector('.table-item');
 
@@ -36,6 +38,7 @@ const displayBook = () => {
   });
 };
 
+/* Submit */
 document.querySelector('.btn-submit').addEventListener('click', (e) => {
   e.preventDefault();
   addBook();
@@ -44,6 +47,7 @@ document.querySelector('.btn-submit').addEventListener('click', (e) => {
   document.querySelector('#author').value = '';
 });
 
+/* Remove Book */
 const deleteBook = (elem) => {
   const books = JSON.parse(localStorage.getItem('books'));
   if (books.length === 1) {
