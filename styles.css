@@ -1,4 +1,11 @@
-h1 {
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+body {
+  font-family: "Comic Neue", cursive;
+}
+
+h1,
+h2 {
   text-align: center;
 }
 
@@ -6,14 +13,49 @@ h1 {
 #list-books {
   margin: 0 auto;
   width: 50%;
-  display: flex;
   justify-content: center;
+}
+
+#add-book,
+#list-books,
+button,
+.btn-submit {
+  display: flex;
 }
 
 #list-books {
   padding-bottom: 20px;
 }
 
+table {
+  border: solid 2px black;
+  border-spacing: 0;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+td,
+table {
+  padding: 10px;
+}
+
 input {
   margin: 5px;
+}
+
+button,
+.btn-submit {
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 0.4rem;
+  border-radius: 6px;
+  margin-left: auto;
+  border: 0.125rem #333 solid;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+}
+
+.btn-remove {
+  margin-left: 50px;
 }
