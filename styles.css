@@ -4,32 +4,83 @@ body {
   font-family: "Comic Neue", cursive;
 }
 
+.nav {
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 16px auto 0 auto;
+  padding: 1px;
+}
+
+.menu {
+  flex: 0.3;
+  justify-content: space-evenly;
+  padding: 0.5rem;
+  list-style-type: none;
+  margin: 0;
+  cursor: pointer;
+}
+
+hr {
+  border: 1px solid #333;
+  height: 20px;
+  margin: 0 5px;
+}
+
+.logo {
+  margin-left: 16px;
+  color: black;
+  margin-block: 1px;
+}
+
+.menu,
+.logo,
+.footer {
+  font-weight: bold;
+}
+
 h1,
-h2 {
+.conText {
   text-align: center;
 }
 
 #add-book,
-#list-books {
+#list-books,
+#contact {
+  margin: 0;
+  width: 60%;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#formid {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.conList {
   margin: 0 auto;
   width: 50%;
-  justify-content: center;
 }
 
-#add-book,
-#list-books,
+.nav,
+.menu,
 button,
-.btn-submit {
+#formid,
+.btn-submit,
+.footer {
   display: flex;
-}
-
-#list-books {
-  padding-bottom: 20px;
 }
 
 table {
   border: solid 2px black;
   border-spacing: 0;
+  margin: 0 auto;
 }
 
 tr:nth-child(even) {
@@ -51,11 +102,34 @@ button,
   letter-spacing: 1px;
   padding: 0.4rem;
   border-radius: 6px;
-  margin-left: auto;
   border: 0.125rem #333 solid;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
 }
 
 .btn-remove {
   margin-left: 50px;
+}
+
+.footer {
+  height: 40px;
+  justify-content: flex-start;
+  position: absolute;
+  bottom: 0;
+  width: 98%;
+  margin: auto auto 16px auto;
+}
+
+.nav,
+.footer {
+  border: solid 2px black;
+  border-radius: 6px;
+}
+
+.copy {
+  margin: 0 16px;
+  padding-top: 10px;
+}
+
+.hidden {
+  display: none;
 }

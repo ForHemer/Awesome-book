@@ -1,57 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-1">
-        <title>Awesome books</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <section id="navigation">
-            <h2>Awesome books</h2> 
-            <nav class="menu">
-                <ul class="menu-list">
-                    <li class="menu-list-item"><a href="#" id="list">List</a></li>
-                    <li class="menu-list-item separator"></li>
-                    <li class="menu-list-item"><a href="#" id="addNew">Add New</a></li>
-                    <li class="menu-list-item separator"></li>
-                    <li class="menu-list-item"><a href="#" id="contact">Contact</a></li>
-                </ul>
-            </nav>
-        </section>
-        
-        <div class="clock" id="currentTime"></div>
-       
-        <section id="list-books">
-            <h2>All awesome books</h2>
-            <table class="table-item">
+<<<<<<< Updated upstream <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-1">
+  <title>Awesome books</title>
+  <link rel="stylesheet" href="styles.css">
+  </head>
 
-            </table>
-        </section>
+  <body>
+    <section id="navigation">
+      <h2>Awesome books</h2>
+      <nav class="menu">
+        <ul class="menu-list">
+          <li class="menu-list-item"><a href="#" id="list">List</a></li>
+          <li class="menu-list-item separator"></li>
+          <li class="menu-list-item"><a href="#" id="addNew">Add New</a></li>
+          <li class="menu-list-item separator"></li>
+          <li class="menu-list-item"><a href="#" id="contact">Contact</a></li>
+        </ul>
+      </nav>
+    </section>
 
-        <section id="add-book">
-            <h2>Add New Book</h2>
-            <form class="form-container" id="formid">
-                <input type="text" placeholder="Title" id="title" required> <br/>
-                <input type="text" placeholder="Author" id="author" required> <br/>
-                <input type="submit" id="submit" name="submit" class="btn-submit" value="Add">
-            </form>        
-        </section>
+    <div class="clock" id="currentTime"></div>
 
-        <section id="contact-section">
-            <h2>Contact information</h2>
-            <p class="contact-content">
-                Do you have any questions or you just want to say "Hello"? <br />
-                You can reach out to us! 
-            </p>
-            <ul class="contact-list">
-                <li class="contact-list-item">Our e-mail: example@mail.com</li>
-                <li class="contact-list-item">Our phone number: 001122334455</li>
-                <li class="contact-list-item">Our address: Streetname 22, Silicon valley, Country</li>
-            </ul>
-        </section>
+    <section id="list-books">
+      <h2>All awesome books</h2>
+      <table class="table-item">
 
-        <footer>Copyright ...</footer>
-      <script src="index.js"></script>
-    </body>
+      </table>
+    </section>
+
+    <section id="add-book">
+      <h2>Add New Book</h2>
+      <form class="form-container" id="formid">
+        <input type="text" placeholder="Title" id="title" required> <br />
+        <input type="text" placeholder="Author" id="author" required> <br />
+        <input type="submit" id="submit" name="submit" class="btn-submit" value="Add">
+      </form>
+    </section>
+
+    <section id="contact-section">
+      <h2>Contact information</h2>
+      <p class="contact-content">
+        Do you have any questions or you just want to say "Hello"? <br />
+        You can reach out to us!
+      </p>
+      <ul class="contact-list">
+        <li class="contact-list-item">Our e-mail: example@mail.com</li>
+        <li class="contact-list-item">Our phone number: 001122334455</li>
+        <li class="contact-list-item">Our address: Streetname 22, Silicon valley, Country</li>
+      </ul>
+    </section>
+
+    <footer>Copyright ...</footer>
+    <script src="index.js"></script>
+  </body>
+  =======
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-1">
+    <title>Awesome books</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <nav class="nav">
+      <p class="logo">Awesome Books</p>
+      <ul class="menu">
+        <li class="list">List</li>
+        <li>
+          <hr>
+        </li>
+        <li class="addNew">Add new</li>
+        <li>
+          <hr>
+        </li>
+        <li class="contact">Contact</li>
+      </ul>
+    </nav>
+
+    <main id="all-books">
+      <section id="list-books">
+        <h1>All awesome books</h1>
+        <table class="table-item">
+
+        </table>
+      </section>
+    </main>
+
+    <section id="add-book" class="hidden">
+      <h1>Add a new book</h1>
+      <form class="form-container" id="formid">
+        <input type="text" placeholder="Title" id="title" required> <br />
+        <input type="text" placeholder="Author" id="author" required> <br />
+        <input type="submit" id="submit" name="submit" class="btn-submit" value="Add">
+      </form>
+    </section>
+
+    <section id="contact" class="hidden">
+      <h1>Contact Information</h1>
+      <p class="conText">Do you have any questions or you just want to say, "Hello"?</p>
+      <p class="conText">You can reach out to us!</p>
+      <ul class="conList">
+        <li>Our e-mail: mail@mail.com</li>
+        <li>Our phone number: 01234567</li>
+        <li>Our address: Streetname 12, 34567 City, Country</li>
+      </ul>
+    </section>
+
+    <footer class="footer">
+      <p class="copy"> Copyright &copy; 2022</p>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+  >>>>>>> Stashed changes
+
 </html>
